@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AbdulSalamLLC | Elite Truck Dispatching</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.pricing {
+  text-align: center;
+  background: #111827;
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
+.pricing h2 {
+  font-size: 36px;
+}
+
+.price-highlight {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+form {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background: #334155;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0f172a;
+  color: #64748b;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>AbdulSalamLLC</h1>
+  <p>Professional Truck Dispatching Services</p>
+  <p>5 Days FREE Trial • Only 7% After</p>
+  <a href="#apply" class="btn">Start Free Trial</a>
+</header>
+
+<section>
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>High-Paying Loads</h3>
+      <p>We negotiate top rates to maximize your weekly revenue.</p>
+    </div>
+    <div class="card">
+      <h3>Dedicated Dispatcher</h3>
+      <p>One-on-one support focused on your lanes and preferences.</p>
+    </div>
+    <div class="card">
+      <h3>Broker Communication</h3>
+      <p>We handle paperwork, rate confirmations, and follow-ups.</p>
+    </div>
+    <div class="card">
+      <h3>24/7 Support</h3>
+      <p>Always available when you need assistance on the road.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Qualification Requirements</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Active MC & DOT</h3>
+      <p>Authority must be active and in good standing.</p>
+    </div>
+    <div class="card">
+      <h3>Valid Insurance</h3>
+      <p>Minimum required coverage per FMCSA standards.</p>
+    </div>
+    <div class="card">
+      <h3>Good Safety Record</h3>
+      <p>No major violations or unsafe history.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>Simple Pricing</h2>
+  <p class="price-highlight">7%</p>
+  <p>After your 5-day FREE trial, we charge only 7% per booked load.</p>
+  <p>No contracts. Cancel anytime.</p>
+</section>
+
+<section id="apply">
+  <h2 class="section-title">Apply for Free Trial</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="company" placeholder="Company Name" required>
+    <input type="text" name="owner" placeholder="Owner Name" required>
+    <input type="text" name="mc" placeholder="MC Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <textarea name="equipment" placeholder="Equipment Type (Dry Van, Reefer, Flatbed, etc.)"></textarea>
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 AbdulSalamLLC. All Rights Reserved.
+</footer>
+
+</body>
+</html>
